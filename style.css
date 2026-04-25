@@ -1,0 +1,235 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+
+  background: 
+    url('mbackground.jpg') center/cover fixed no-repeat;
+}
+
+/* Logo */
+.logo {
+  text-align: left;
+  font-size: 32px;
+  margin: 15px 30px;
+  color: #1e3c72;
+  letter-spacing: 2px;
+}
+
+/* Navbar (full left) */
+.nav-bar {
+  background: #1e3c72;
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 0;
+}
+
+.nav-bar a {
+  color: white;
+  margin-right: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-bar a:hover {
+  color: #ff416c;
+}
+
+/* Hero */
+.hero {
+  height: 60vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('hbackground.jpg') center/cover no-repeat;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: white;
+  color: #1e3c72;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Products */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+button {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Login & Signup Background */
+/* Fix login background */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('background.jpg') center/cover no-repeat;
+}
+
+/* Form Card */
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  width: 340px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  backdrop-filter: blur(5px);
+}
+
+/* Bigger signup */
+.signup-card {
+  width: 500px;
+}
+
+/* Headings */
+.login-card h2 {
+  margin-bottom: 10px;
+  color: #ff416c;
+  text-align: center;
+}
+
+.sub-text {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #ff416c;
+  box-shadow: 0 0 5px rgba(255,65,108,0.4);
+}
+
+/* Two-column fields */
+.form-group {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group input {
+  width: 100%;
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Bottom text */
+.bottom-text {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.bottom-text a {
+  color: #ff416c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e3c72;
+  color: white;
+}
+
+.page-container {
+  background: #ffffff;
+  margin: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.about {
+  background: #ffffff;
+  padding: 40px;
+  margin: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 15px;
+  color: #ff416c;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 10px auto;
+  color: #555;
+  line-height: 1.6;
+}
